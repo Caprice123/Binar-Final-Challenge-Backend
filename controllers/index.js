@@ -1,13 +1,11 @@
 module.exports = {
     // Login
-    login: require("./login"),
+    login: require("./user/login"),
 
     // Register
-    register: require("./register"),
+    register: require("./user/register"),
 
     // Encrypt and Decrpyt
-    encryptPass: require("./encrypt_pass"),
-    decryptPass: require("./decrypt_pass"),
-
-
+    encryptPass: require("./encrypt-decrypt/encrypt_pass"),
+    decryptPass: require("./encrypt-decrypt/decrypt_pass"),
 };

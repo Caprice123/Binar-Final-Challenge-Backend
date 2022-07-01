@@ -1,12 +1,12 @@
-const { Users } = require("../models");
-const encryptFunction = require("./encrypt_pass");
+const { Users } = require("../../models");
+const encryptFunction = require("../encrypt-decrypt/encrypt_pass");
 
 async function register(req, res) {
   try {
     let nameInput = req.body.name;
+    console.log(req.body);
     let emailInput = req.body.email;
     let passwordInput = await encryptFunction(req.body.password);
-    console.log(req.body);
     // let imgInput = req.body.img_url;
     // let cityInput = req.body.city;
     // let addressInput = req.body.address;
