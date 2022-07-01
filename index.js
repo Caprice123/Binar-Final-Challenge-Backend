@@ -13,14 +13,6 @@ app.use(express.json());
 app.post("/api/v1/login", controllers.login);
 app.post("/api/v1/register", controllers.register);
 
-// products
-app.post("/api/v1/products", controllers.productPost);
-app.get("/api/v1/products", controllers.productGet);
-app.get("/api/v1/products/:id", controllers.productGetByID);
-app.put("/api/v1/products/:id", controllers.productPut);
-app.delete("/api/v1/products/:id", controllers.productDelete);
-
-
 // https://www.npmjs.com/package/swagger-ui-express
 const options = {
     swaggerOptions: {

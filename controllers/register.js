@@ -6,7 +6,7 @@ async function register(req, res) {
     let nameInput = req.body.name;
     let emailInput = req.body.email;
     let passwordInput = await encryptFunction(req.body.password);
-    console.log(req.body)
+    console.log(req.body);
     // let imgInput = req.body.img_url;
     // let cityInput = req.body.city;
     // let addressInput = req.body.address;
@@ -35,4 +35,4 @@ async function register(req, res) {
 
 }
 
-module.exports = register
+module.exports = register;
